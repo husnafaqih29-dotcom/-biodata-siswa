@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Biodata Siswa</title>
+	<!-- Menghubungkan file HTML dengan file CSS eksternal -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="card">
+		<!-- Foto Profil Siswa -->
+		<img src="images.jpg" alt="Foto Siswa" class="profile-img">
+
+		<h1>Nur Ayatul Husna Faqih</h1>
+		<div class="class-badge">kelas X RPL</div>
+
+		<!-- Informasi Detail Biodata --> 
+		<div class="biodata-info">
+			<div class="info-item">
+				<span class="label">NISN</span>
+				<span class="value">0081234567</span>
+			</div>
+			<div class="info-item">
+				<span class="label">Sekolah</span>
+				<span class="value">SMKS Darussalam Makassar</span>
+			</div>
+			<div class="info-item">
+				<span class="label"Hobi</span>
+				<span class="value"mengenal hal yang baru</span>
+			</div>
+			<div class="info-item">
+				<span class="label">Cita-cita</span>
+				<span class="value">software angineer</span>
+			</div>
+		</div>
+
+		<!-- Tombol Interaktif Sederhana -->
+		<button class="btn" onclick="tampilkanPesan()">Hubungi Saya</button>
+		<div id="pesan"></div>
+	</div>
+
+	<!-- JavaScript Sederhana -->
+	<script>
+		function tampilkanPesan() {
+			const pesan = document.getElementById("pesan");
+			pesan.innerHTML = "Terima kasih sudah melihat profil saya!";
+		}
+	</script>
+</body>
+</html>
+
